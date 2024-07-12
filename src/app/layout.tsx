@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import "./globals.css";
-import Navbar from "@/components/Shared/Navbar/Navbar";
 import { Lexend } from "next/font/google";
+import Navbar from "@/components/Shared/Navbar";
 
 // Configuring Lexend font with specific weights, styles, and subsets
 const lexend = Lexend({
-  weight: ["400", "500", "600"],
+  weight: ["300", "400", "500", "600"],
   style: ["normal"],
   subsets: ["latin"],
   display: "swap",
@@ -31,7 +31,7 @@ export default function RootLayout({
           <Navbar />
 
           {/* Main content container with styling */}
-          <div className="max-w-6xl mx-auto px-6 bg-white-smoke">
+          <div className="bg-white-smoke">
             {/* Rendering children components */}
             {children}
           </div>

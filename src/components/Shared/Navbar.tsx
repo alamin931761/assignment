@@ -43,7 +43,7 @@ const Navbar = () => {
   );
   return (
     <div className="bg-dark-jungle-green text-seashell">
-      <div className="min-h-20 max-w-6xl mx-auto px-6">
+      <div className="min-h-20 max-w-6xl mx-auto px-9">
         {/* Navbar main container */}
         <div className="min-h-20 max-h-full flex items-center justify-between">
           {/* Logo with link to homepage */}
