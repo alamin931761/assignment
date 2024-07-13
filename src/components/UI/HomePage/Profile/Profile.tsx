@@ -1,58 +1,45 @@
 import Image from "next/image";
 import assets from "@/assets";
-import Container from "@/components/Shared/Container";
 import { GoDotFill } from "react-icons/go";
 import { Button } from "@/components/UI/button";
 
 const Profile = () => {
   return (
-    <div>
-      {/* Profile background image */}
-      <div>
-        <Image
-          src={assets.images.profileBackground}
-          height={400}
-          width={1920}
-          alt="profile picture"
-          className="h-[400px] w-full"
-        />
-      </div>
+    <div className="relative lg:mx-6">
+      {/* Profile picture */}
+      <Image
+        src={assets.images.profilePic}
+        height={200}
+        width={200}
+        alt="profile picture"
+        className="h-[100px] w-[100px] lg:h-[200px] lg:w-[200px] absolute -top-[50px] lg:-top-[100px] left-3"
+      />
 
-      <Container>
-        <div className="relative">
-          {/* Profile picture */}
-          <Image
-            src={assets.images.profilePic}
-            height={200}
-            width={200}
-            alt="profile picture"
-            className="absolute -top-[100px]"
-          />
+      {/* Profile details container */}
+      <div className="relative left-[128px] lg:left-[238px] top-2 lg:top-[26px] mx-3">
+        <div className="w-full flex justify-between flex-wrap">
+          <div>
+            {/* User's name and username */}
+            <h2 className="text-sm lg:text-2xl font-semibold text-baltic-sea mb-1 lg:mb-2 flex items-center text-nowrap">
+              John Doe <GoDotFill className="inline mx-2" />
+              <span className="text-dark-pastel-blue font-light text-xs">
+                @johndoe
+              </span>
+            </h2>
 
-          {/* User information and follow button */}
-          <div className="flex justify-between">
-            <div className="relative left-[226px]">
-              {/* User description */}
-              <h2 className="text-2xl font-semibold text-baltic-sea mb-2 flex items-center">
-                John Doe <GoDotFill className="inline mx-2" />
-                <span className="text-dark-pastel-blue font-light text-xs">
-                  @johndoe
-                </span>
-              </h2>
-
-              <div className="text-sm text-dark-jungle-green">
-                <p>Astrophotographer 🌌</p>
-                <p>Gamer 👾</p>
-              </div>
+            {/* User's bio */}
+            <div className="lg:text-sm text-xs text-dark-jungle-green">
+              <p>Astrophotographer 🌌</p>
+              <p>Gamer 👾</p>
             </div>
-
-            {/* Follow button */}
-            <Button className="uppercase text-sm rounded-[100px]">
-              follow
-            </Button>
           </div>
+
+          {/* Follow button */}
+          <Button className="uppercase text-xs lg:text-sm rounded-[100px]">
+            follow
+          </Button>
         </div>
-      </Container>
+      </div>
     </div>
   );
 };
