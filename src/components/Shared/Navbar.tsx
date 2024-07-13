@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { BsThreeDots } from "react-icons/bs";
+import { AiOutlineComment } from "react-icons/ai";
 import {
   IoMdSearch,
   IoMdCreate,
@@ -39,10 +40,14 @@ const Navbar = () => {
       <Link href="/options">
         <BsThreeDots className="bg-baltic-sea h-10 w-10 p-2 rounded-full" />
       </Link>
+
+      <Link href="/comments">
+        <AiOutlineComment className="bg-baltic-sea h-10 w-10 p-1 rounded-full" />
+      </Link>
     </>
   );
   return (
-    <div className="bg-dark-jungle-green text-seashell">
+    <div className="bg-dark-jungle-green text-seashell sticky top-0 z-50">
       <div className="min-h-20 max-w-6xl mx-auto px-9">
         {/* Navbar main container */}
         <div className="min-h-20 max-h-full flex items-center justify-between">
@@ -58,7 +63,7 @@ const Navbar = () => {
 
           {/* Desktop navigation links */}
           <div className="flex">
-            <div className="hidden md:flex justify-between gap-4">
+            <div className="hidden md:flex justify-between items-center gap-4">
               {navLinks}
             </div>
 

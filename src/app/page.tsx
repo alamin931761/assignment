@@ -1,10 +1,16 @@
 import Image from "next/image";
 import Container from "@/components/Shared/Container";
-import Blogs from "@/components/UI/HomePage/Profile/Blogs";
-import Photos from "@/components/UI/HomePage/Profile/Photos";
-import Profile from "@/components/UI/HomePage/Profile/Profile";
-import Videos from "@/components/UI/HomePage/Profile/Videos";
+import Photos from "@/components/UI/HomePage/Photos";
+import Profile from "@/components/UI/HomePage/Profile";
+import Videos from "@/components/UI/HomePage/Videos";
 import assets from "@/assets";
+import Blogs from "@/components/UI/HomePage/Blogs";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "",
+};
 
 const HomePage = () => {
   return (

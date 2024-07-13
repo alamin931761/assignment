@@ -1,5 +1,5 @@
-import Card from "@/components/UI/HomePage/Profile/Card";
 import { TBlog } from "@/types";
+import BlogCard from "@/components/UI/HomePage/BlogCard";
 
 const Blogs = () => {
   const blogs = [
@@ -22,7 +22,7 @@ const Blogs = () => {
   return (
     <div>
       {blogs.map((blog: TBlog) => (
-        <Card key={blog._id} blog={blog} />
+        <BlogCard key={blog._id} blog={blog} />
       ))}
     </div>
   );
