@@ -12,6 +12,7 @@ const assets = {
     rectangle7: require("@/assets/images/rectangle-7.jpeg"),
     rectangle8: require("@/assets/images/rectangle-8.jpeg"),
     playerButton: require("@/assets/images/player-button.png"),
+    notFound: require("@/assets/images/404.png"),
   },
 };
 

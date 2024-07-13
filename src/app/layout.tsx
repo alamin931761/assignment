@@ -31,7 +31,7 @@ export default function RootLayout({
           <Navbar />
 
           {/* Main content container with styling */}
-          <div className="bg-white-smoke bg-blue-100">
+          <div className="bg-white-smoke">
             {/* Rendering children components */}
             {children}
           </div>
