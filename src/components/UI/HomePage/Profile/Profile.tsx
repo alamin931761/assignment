@@ -20,7 +20,7 @@ const Profile = () => {
         <div className="w-full flex justify-between flex-wrap">
           <div>
             {/* User's name and username */}
-            <h2 className="text-sm lg:text-2xl font-semibold text-baltic-sea mb-1 lg:mb-2 flex items-center text-nowrap">
+            <h2 className="text-sm lg:text-2xl font-semibold text-baltic-sea mb-2 flex items-center text-nowrap">
               John Doe <GoDotFill className="inline mx-2" />
               <span className="text-dark-pastel-blue font-light text-xs">
                 @johndoe
@@ -28,7 +28,7 @@ const Profile = () => {
             </h2>
 
             {/* User's bio */}
-            <div className="lg:text-sm text-xs text-dark-jungle-green">
+            <div className="lg:text-sm text-xs text-dark-jungle-green mb-2">
               <p>Astrophotographer 🌌</p>
               <p>Gamer 👾</p>
             </div>

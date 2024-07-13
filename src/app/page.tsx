@@ -33,7 +33,7 @@ const HomePage = () => {
           </div>
 
           {/* Photos and Videos Component */}
-          <div className="order-1 lg:order-2 mt-[164px] lg:mt-[26px] grid grid-cols-2 lg:grid-cols-1 gap-3">
+          <div className="order-1 lg:order-2 mt-[125px] lg:mt-[26px] grid grid-cols-2 lg:grid-cols-1 gap-3">
             <Photos />
             <Videos />
           </div>
