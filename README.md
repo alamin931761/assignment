@@ -9,5 +9,4 @@
 
 ##
 
-Live site: [Assignment](https://assignment-alpha-nine.vercel.app/) <br>
-Client side code: [Assignment](https://github.com/alamin931761/assignment)
+Live site: [Assignment](https://assignment-alpha-nine.vercel.app/)
