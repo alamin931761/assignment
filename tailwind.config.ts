@@ -23,7 +23,7 @@ const config = {
         "baltic-sea": "hsl(var(--baltic-sea))",
         "carbon-grey": "hsl(var(--carbon-grey))",
         seashell: "hsl(var(--seashell))",
-        "white-smoke": "hsl(var(--white-smoke))",
+        ceramic: "hsl(var(--ceramic))",
         "milk-white": "hsl(var(--milk-white))",
         "fun-blue": "hsl(var(--fun-blue))",
         "dark-pastel-blue": "hsl(var(--dark-pastel-blue))",

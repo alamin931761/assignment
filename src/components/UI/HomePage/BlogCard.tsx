@@ -12,7 +12,11 @@ const BlogCard = ({ blog }: { blog: TBlog }) => {
       key={blog._id}
       className="mb-4 bg-seashell rounded-[10px] px-4 pt-4 py-[10px]"
     >
-      <div className={`${collapse ? "h-[172px]" : "h-full"} overflow-hidden`}>
+      <div
+        className={`${
+          collapse ? "h-[172px] sm:h-[120px]" : "h-full"
+        } overflow-hidden`}
+      >
         {/* Title of the blog */}
         <h1 className="text-base lg:text-[26px] font-semibold text-baltic-sea">
           {blog.title}

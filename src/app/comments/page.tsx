@@ -19,9 +19,9 @@ const commentsPage = async () => {
 
   return (
     <Container>
-      <div className="h-screen">
+      <div className="py-5">
         {/* Header for the comments section */}
-        <h2 className="text-center text-base lg:text-[26px] font-semibold text-baltic-sea my-5">
+        <h2 className="text-center text-base lg:text-[26px] font-semibold text-baltic-sea mb-5">
           Comments
         </h2>
 

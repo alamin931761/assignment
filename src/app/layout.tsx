@@ -26,15 +26,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={lexend.className}>
-        <div className="bg-seashell">
+        <div className="bg-ceramic">
           {/* Navbar component */}
           <Navbar />
 
-          {/* Main content container with styling */}
-          <div className="bg-white-smoke">
-            {/* Rendering children components */}
-            {children}
-          </div>
+          {/* Rendering children components */}
+          {children}
         </div>
       </body>
     </html>
